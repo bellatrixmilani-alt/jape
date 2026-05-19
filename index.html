@@ -1,0 +1,3250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JP Nyiha – Permanent Weight Loss Coaching for Women</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Calendly CSS -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --cream: #FFFFFF;
+      --warm-white: #F9FAFB;
+      --charcoal: #0A0A0A;
+      --soft-black: #1A1A1A;
+      --muted: #374151;
+      --border: #E5E7EB;
+
+      /* Primary Brand Colors */
+      --brand-blue: #2563EB;
+      --brand-blue-hover: #1D4ED8;
+      --brand-blue-light: #EFF6FF;
+
+      /* Semantic Colors */
+      --success-green: #10B981;
+      --whatsapp-green: #25D366;
+      --whatsapp-green-hover: #1EBE57;
+      --gold: #F59E0B;
+      --danger-red: #EF4444;
+
+      --serif: 'DM Serif Display', Georgia, serif;
+      --sans: 'DM Sans', system-ui, sans-serif;
+      --radius-sm: 10px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --shadow: 0 2px 20px rgba(0, 0, 0, .07);
+      --shadow-lg: 0 8px 40px rgba(0, 0, 0, .12);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--sans);
+      background: var(--cream);
+      color: var(--charcoal);
+      line-height: 1.6;
+      font-size: 16px;
+      overflow-x: hidden;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font-family: var(--sans);
+      cursor: pointer;
+      border: none;
+      outline: none;
+    }
+
+    /* ── TOP MARQUEE (ENDLESS SCROLL) ── */
+    .top-marquee {
+      background: var(--brand-blue);
+      color: var(--cream);
+      overflow: hidden;
+      white-space: nowrap;
+      padding: 0.6rem 0;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+    }
+
+    .marquee-content {
+      display: inline-block;
+      animation: marquee 25s linear infinite;
+      padding-left: 100%;
+    }
+
+    .marquee-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 1.5rem;
+      padding-right: 3rem;
+    }
+
+    .marquee-item a {
+      text-decoration: underline;
+      font-weight: 600;
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, .95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 5vw;
+    }
+
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+    }
+
+    .nav-logo {
+      font-family: var(--serif);
+      font-size: 1.3rem;
+      letter-spacing: .02em;
+      color: var(--charcoal);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .nav-links a {
+      font-size: .875rem;
+      font-weight: 500;
+      color: var(--muted);
+      transition: color .2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--charcoal);
+    }
+
+    .btn-whatsapp-solid {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      background: var(--whatsapp-green);
+      color: var(--cream);
+      padding: .6rem 1.3rem;
+      border-radius: 999px;
+      font-size: .875rem;
+      font-weight: 600;
+      transition: background .2s;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .btn-whatsapp-solid:hover {
+      background: var(--whatsapp-green-hover);
+    }
+
+    .btn-whatsapp-solid svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+
+    .nav-hamburger {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--charcoal);
+    }
+
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1.25rem 5vw 1.5rem;
+      background: var(--cream);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .mobile-menu.open {
+      display: flex;
+    }
+
+    .mobile-menu a,
+    .mobile-menu button {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--charcoal);
+      text-align: left;
+    }
+
+    .mobile-menu .btn-full {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--whatsapp-green);
+      color: var(--cream);
+      padding: .8rem 1.2rem;
+      border-radius: var(--radius-sm);
+      font-size: .9375rem;
+      font-weight: 600;
+      width: 100%;
+      text-align: center;
+    }
+
+    .mobile-menu .btn-full svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+
+    /* ── SHARED ── */
+    .section {
+      padding: 5rem 5vw;
+    }
+
+    .section-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-size: .75rem;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: .875rem;
+    }
+
+    .section-title {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 400;
+      line-height: 1.2;
+      color: var(--charcoal);
+      margin-bottom: 1rem;
+    }
+
+    .section-subtitle {
+      font-size: 1.05rem;
+      color: var(--muted);
+      line-height: 1.7;
+      max-width: 540px;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .5rem;
+      background: var(--brand-blue);
+      color: var(--cream);
+      padding: 0 1.75rem;
+      border-radius: 999px;
+      height: 50px;
+      font-size: .9375rem;
+      font-weight: 600;
+      transition: all .2s;
+      border: 1.5px solid var(--brand-blue);
+      box-sizing: border-box;
+    }
+
+    .btn-primary:hover {
+      background: var(--brand-blue-hover);
+      transform: translateY(-1px);
+    }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .5rem;
+      background: transparent;
+      color: var(--charcoal);
+      border: 1.5px solid var(--border);
+      padding: 0 1.75rem;
+      border-radius: 999px;
+      height: 50px;
+      font-size: .9375rem;
+      font-weight: 600;
+      transition: all .2s;
+      box-sizing: border-box;
+    }
+
+    .btn-outline:hover {
+      border-color: var(--charcoal);
+      background: var(--warm-white);
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      padding: .35rem .9rem;
+      border-radius: 999px;
+      font-size: .8125rem;
+      font-weight: 500;
+      color: var(--charcoal);
+    }
+
+    .pill-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--brand-blue);
+      flex-shrink: 0;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      padding: 4rem 5vw 4rem;
+      background: var(--cream);
+    }
+
+    .hero-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .hero-text {
+      padding-bottom: 0;
+    }
+
+    .hero-title {
+      font-family: var(--serif);
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      line-height: 1.12;
+      color: var(--charcoal);
+      margin: 1.25rem 0 1.5rem;
+    }
+
+    .hero-subtext {
+      font-size: 1.05rem;
+      color: var(--muted);
+      line-height: 1.75;
+      margin-bottom: 2.25rem;
+      max-width: 460px;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Trust Badge (Hero) */
+    .hero-trust {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .hero-avatars {
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-avatars img {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border: 3px solid white;
+      margin-left: -14px;
+      object-fit: cover;
+      background: white;
+    }
+
+    .hero-avatars img:first-child {
+      margin-left: 0;
+    }
+
+    .avatar-more {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border: 3px solid white;
+      margin-left: -14px;
+      background: var(--brand-blue-light);
+      color: var(--brand-blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 700;
+      z-index: 1;
+    }
+
+    .trust-text {
+      display: flex;
+      flex-direction: column;
+      gap: 0.1rem;
+    }
+
+    .trust-stars {
+      color: var(--gold);
+      font-size: 1rem;
+      letter-spacing: 2px;
+      line-height: 1;
+    }
+
+    .trust-bold {
+      font-weight: 700;
+      font-size: 0.875rem;
+      color: var(--charcoal);
+    }
+
+    .hero-image-col {
+      position: relative;
+      width: 100%;
+    }
+
+    .hero-image-wrap {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      aspect-ratio: 3/4;
+      position: relative;
+      width: 100%;
+      display: block;
+      background-color: var(--border);
+    }
+
+    .carousel-slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 0.8s ease-in-out;
+    }
+
+    .carousel-slide>img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+    }
+
+    .carousel-slide.active {
+      opacity: 1;
+      z-index: 2;
+    }
+
+    .carousel-indicators {
+      position: absolute;
+      bottom: 1.5rem;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      z-index: 10;
+    }
+
+    .carousel-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.4);
+      transition: all 0.3s;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    .carousel-dot.active {
+      background: var(--brand-blue);
+      transform: scale(1.2);
+    }
+
+    .hero-badge {
+      position: absolute;
+      bottom: 3rem;
+      left: -1.5rem;
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 1rem 1.25rem;
+      box-shadow: var(--shadow);
+      min-width: 180px;
+      z-index: 10;
+    }
+
+    .hero-badge-num {
+      font-family: var(--serif);
+      font-size: 1.75rem;
+      color: var(--brand-blue);
+      transition: opacity 0.3s ease;
+    }
+
+    .hero-badge-label {
+      font-size: .8125rem;
+      color: var(--muted);
+      margin-top: .2rem;
+      transition: opacity 0.3s ease;
+    }
+
+    /* ── STATS STRIP ── */
+    .stats-strip {
+      background: var(--charcoal);
+      padding: 2.5rem 5vw;
+    }
+
+    .stats-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: rgba(255, 255, 255, .1);
+      border: 1px solid rgba(255, 255, 255, .1);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+
+    .stat-item {
+      padding: 1.75rem 2rem;
+      background: var(--charcoal);
+      text-align: center;
+    }
+
+    .stat-num {
+      font-family: var(--serif);
+      font-size: 2.5rem;
+      color: var(--cream);
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: .875rem;
+      color: rgba(255, 255, 255, .55);
+      margin-top: .375rem;
+    }
+
+    /* ── PAIN ── */
+    .pain {
+      background: var(--warm-white);
+    }
+
+    .pain-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      margin-top: 3rem;
+    }
+
+    .pain-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: .75rem;
+    }
+
+    .pain-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: .75rem;
+      padding: 1rem 1.25rem;
+      background: var(--cream);
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border);
+      font-size: .9375rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .pain-list li .icon-x {
+      color: var(--danger-red);
+      font-size: 1rem;
+      flex-shrink: 0;
+      margin-top: .1rem;
+    }
+
+    .pain-bridge {
+      font-family: var(--sans);
+      font-size: 1rem;
+      font-style: italic;
+      color: var(--muted);
+      margin-top: 1.5rem;
+      line-height: 1.6;
+    }
+
+    .pain-solution {
+      background: var(--brand-blue-light);
+      border: 1.5px solid var(--brand-blue);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+    }
+
+    .pain-solution h3 {
+      font-family: var(--serif);
+      font-size: 1.75rem;
+      color: var(--charcoal);
+      margin-bottom: 1.25rem;
+    }
+
+    .solution-items {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: .75rem;
+    }
+
+    .solution-items li {
+      display: flex;
+      align-items: flex-start;
+      gap: .75rem;
+      font-size: .9375rem;
+      color: var(--charcoal);
+      line-height: 1.55;
+    }
+
+    .solution-items li .icon-check {
+      color: var(--success-green);
+      flex-shrink: 0;
+      margin-top: .15rem;
+    }
+
+    /* ── TESTIMONIALS (LARGE CARDS) ── */
+    .testimonials {
+      background: var(--warm-white);
+    }
+
+    .testi-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .testi-card {
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .testi-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .testi-img-wrap {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 4/3;
+      background: var(--border);
+      overflow: hidden;
+    }
+
+    .testi-img-inner {
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
+
+    .testi-img-inner img {
+      width: 50%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .testi-img-inner img:first-child {
+      border-right: 2px solid var(--cream);
+    }
+
+    .testi-content {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .testi-meta-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .testi-name {
+      font-weight: 600;
+      font-size: 1.125rem;
+      color: var(--charcoal);
+    }
+
+    .testi-result {
+      font-size: 1rem;
+      color: var(--brand-blue);
+      font-weight: 600;
+    }
+
+    .testi-stars {
+      color: var(--brand-blue);
+      font-size: .9rem;
+      letter-spacing: .05em;
+    }
+
+    .testi-quote {
+      font-size: 1rem;
+      color: var(--muted);
+      line-height: 1.7;
+      font-style: italic;
+      border-left: 3px solid var(--brand-blue);
+      padding-left: 1.25rem;
+      margin: 0.5rem 0;
+    }
+
+    .testi-tag {
+      display: inline-block;
+      background: var(--brand-blue-light);
+      color: var(--brand-blue);
+      font-size: .75rem;
+      font-weight: 600;
+      padding: .3rem .8rem;
+      border-radius: 999px;
+      letter-spacing: .04em;
+      align-self: flex-start;
+    }
+
+    .testi-filters {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+      justify-content: center;
+    }
+
+    .filter-btn {
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-size: .875rem;
+      font-weight: 500;
+      padding: .5rem 1.25rem;
+      border-radius: 999px;
+      transition: all 0.2s;
+    }
+
+    .filter-btn:hover {
+      border-color: var(--charcoal);
+      color: var(--charcoal);
+    }
+
+    .filter-btn.active {
+      background: var(--charcoal);
+      color: var(--cream);
+      border-color: var(--charcoal);
+    }
+
+    .load-more-wrapper {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .testi-card {
+      display: none;
+    }
+
+    /* ── FOUNDER ── */
+    .founder {
+      background: var(--charcoal);
+      padding: 5rem 5vw;
+    }
+
+    .founder-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 5rem;
+      align-items: center;
+    }
+
+    .founder-image-wrap {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      aspect-ratio: 3/4;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, .4);
+      width: 100%;
+      display: block;
+      background-color: #1A1A1A;
+    }
+
+    .founder-image-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+    }
+
+    .founder-label {
+      font-size: .75rem;
+      font-weight: 600;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+
+    .founder-name {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 4vw, 3.25rem);
+      color: var(--cream);
+      line-height: 1.15;
+      margin-bottom: .5rem;
+    }
+
+    .founder-subtitle {
+      font-size: 1rem;
+      color: rgba(255, 255, 255, .5);
+      margin-bottom: 2rem;
+    }
+
+    .founder-bio {
+      display: flex;
+      flex-direction: column;
+      gap: 1.125rem;
+    }
+
+    .founder-bio p {
+      font-size: 1rem;
+      color: rgba(255, 255, 255, .75);
+      line-height: 1.8;
+    }
+
+    .founder-bio strong {
+      color: var(--cream);
+    }
+
+    .founder-creds {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .625rem;
+      margin-top: 1.75rem;
+    }
+
+    .cred-pill {
+      background: rgba(255, 255, 255, .08);
+      border: 1px solid rgba(255, 255, 255, .12);
+      color: rgba(255, 255, 255, .75);
+      font-size: .8125rem;
+      font-weight: 500;
+      padding: .4rem 1rem;
+      border-radius: 999px;
+    }
+
+    /* ── HOW IT WORKS ── */
+    .how {
+      background: var(--cream);
+    }
+
+    .how-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.25rem;
+      margin-top: 3rem;
+    }
+
+    .how-card {
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem 1.5rem;
+    }
+
+    .how-num {
+      font-family: var(--serif);
+      font-size: 2.5rem;
+      color: var(--border);
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+
+    .how-title {
+      font-weight: 600;
+      font-size: .9375rem;
+      color: var(--charcoal);
+      margin-bottom: .5rem;
+    }
+
+    .how-desc {
+      font-size: .875rem;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    /* ── PACKAGES ── */
+    .packages {
+      background: var(--warm-white);
+    }
+
+    .packages-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 2rem;
+      align-items: start;
+    }
+
+    .pkg-card {
+      background: var(--cream);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      transition: transform .3s, box-shadow .3s;
+    }
+
+    .pkg-card:hover {
+      transform: translateY(-4px);
+    }
+
+    /* Featured (Diamond) Specific Styling */
+    .pkg-card.featured {
+      background: #171717;
+      border-color: #171717;
+      box-shadow: var(--shadow-lg);
+      color: white;
+    }
+
+    .pkg-badge {
+      display: inline-block;
+      background: #D97706;
+      color: white;
+      font-size: .6875rem;
+      font-weight: 700;
+      padding: .3rem .8rem;
+      border-radius: 999px;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+    }
+
+    .pkg-name {
+      font-family: var(--serif);
+      font-size: 1.75rem;
+      color: var(--charcoal);
+      margin-bottom: .25rem;
+    }
+
+    .pkg-name.light {
+      color: white;
+    }
+
+    .pkg-goal {
+      font-size: .875rem;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .pkg-goal.light {
+      color: rgba(255, 255, 255, .7);
+    }
+
+    .pkg-price {
+      margin-bottom: 1.5rem;
+    }
+
+    .pkg-price-main {
+      font-family: var(--serif);
+      font-size: 2.5rem;
+      color: var(--charcoal);
+      line-height: 1;
+    }
+
+    .pkg-price-main.light {
+      color: white;
+    }
+
+    .pkg-price-period {
+      font-size: .875rem;
+      color: var(--muted);
+      margin-top: .25rem;
+    }
+
+    .pkg-price-period.light {
+      color: rgba(255, 255, 255, .6);
+    }
+
+    /* Diamond/Platinum Highlight Boxes */
+    .pkg-highlight-dark {
+      background: rgba(16, 185, 129, 0.08);
+      border: 1px solid rgba(16, 185, 129, 0.2);
+      color: #10B981;
+      padding: 0.85rem 1rem;
+      border-radius: 8px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      line-height: 1.4;
+    }
+
+    .pkg-highlight-light {
+      background: #ECFDF5;
+      border: 1px solid #A7F3D0;
+      color: #059669;
+      padding: 0.85rem 1rem;
+      border-radius: 8px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .pkg-divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 1.25rem 0;
+    }
+
+    .pkg-divider.dark {
+      border-color: rgba(255, 255, 255, .1);
+    }
+
+    .pkg-features {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: .85rem;
+    }
+
+    .pkg-features li {
+      display: flex;
+      align-items: flex-start;
+      gap: .6rem;
+      font-size: .9375rem;
+      color: var(--charcoal);
+      line-height: 1.5;
+      font-weight: 500;
+    }
+
+    .pkg-features li.light {
+      color: rgba(255, 255, 255, .9);
+    }
+
+    .feat-check {
+      color: var(--success-green);
+      flex-shrink: 0;
+      margin-top: .1rem;
+      font-weight: bold;
+    }
+
+    .feat-check.gold {
+      color: #F59E0B;
+    }
+
+    .pkg-cta {
+      display: block;
+      width: 100%;
+      margin-top: 1.75rem;
+      padding: 1rem;
+      border-radius: var(--radius-sm);
+      font-size: .9375rem;
+      font-weight: 600;
+      text-align: center;
+      transition: all .2s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .pkg-cta-dark {
+      background: var(--charcoal);
+      color: var(--cream);
+    }
+
+    .pkg-cta-dark:hover {
+      background: var(--soft-black);
+    }
+
+    .pkg-cta-light {
+      background: var(--cream);
+      color: var(--charcoal);
+    }
+
+    .pkg-cta-light:hover {
+      background: var(--warm-white);
+    }
+
+    .pkg-note {
+      text-align: center;
+      font-size: 0.8125rem;
+      color: rgba(255, 255, 255, 0.5);
+      margin-top: 0.75rem;
+    }
+
+    .pkg-note-dark {
+      text-align: center;
+      font-size: 0.8125rem;
+      color: var(--muted);
+      margin-top: 0.75rem;
+    }
+
+    .post-packages-cta {
+      text-align: center;
+      margin-top: 3.5rem;
+      font-size: 1.05rem;
+      color: var(--charcoal);
+      font-weight: 500;
+    }
+
+    .post-packages-cta a {
+      color: var(--brand-blue);
+      font-weight: 600;
+      text-decoration: underline;
+      transition: color 0.2s;
+    }
+
+    .post-packages-cta a:hover {
+      color: var(--brand-blue-hover);
+    }
+
+    /* ── FAQ ── */
+    .faq {
+      background: var(--cream);
+    }
+
+    .faq-list {
+      max-width: 800px;
+      margin: 2.5rem auto 0;
+      display: flex;
+      flex-direction: column;
+      gap: .75rem;
+    }
+
+    .faq-item {
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+
+    .faq-q {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.25rem 1.5rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: var(--sans);
+      font-size: .9375rem;
+      font-weight: 600;
+      color: var(--charcoal);
+      text-align: left;
+      gap: 1rem;
+    }
+
+    .faq-chevron {
+      flex-shrink: 0;
+      transition: transform .25s;
+      font-size: 1.1rem;
+      color: var(--muted);
+    }
+
+    .faq-item.open .faq-chevron {
+      transform: rotate(180deg);
+    }
+
+    .faq-a {
+      display: none;
+      padding: 0 1.5rem 1.25rem;
+      font-size: .9375rem;
+      color: var(--muted);
+      line-height: 1.75;
+    }
+
+    .faq-item.open .faq-a {
+      display: block;
+    }
+
+    /* ── FINAL CTA ── */
+    .final-cta {
+      background: var(--brand-blue);
+      padding: 5rem 5vw;
+      text-align: center;
+    }
+
+    .final-cta-inner {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .final-cta h2 {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 4vw, 3rem);
+      color: var(--cream);
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .final-cta p {
+      font-size: 1.05rem;
+      color: rgba(255, 255, 255, .9);
+      margin-bottom: 2.5rem;
+      line-height: 1.7;
+    }
+
+    .final-cta-btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .cta-pill-white {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      background: var(--cream);
+      color: var(--brand-blue);
+      padding: 0.95rem 2rem;
+      border-radius: 999px;
+      font-size: .9375rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s;
+      border: 1.5px solid var(--cream);
+    }
+
+    .cta-pill-white:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .cta-pill-ghost {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      background: transparent;
+      color: var(--cream);
+      padding: 0.95rem 2rem;
+      border-radius: 999px;
+      font-size: .9375rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.2s;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+    }
+
+    .cta-pill-ghost:hover {
+      border-color: var(--cream);
+      background: rgba(255, 255, 255, 0.1);
+      transform: translateY(-2px);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--charcoal);
+      color: rgba(255, 255, 255, .5);
+      padding: 4rem 5vw 2.5rem;
+      font-size: .875rem;
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr auto auto;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    .footer-col {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .footer-heading {
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, .3);
+      margin-bottom: .5rem;
+    }
+
+    .footer-logo {
+      font-family: var(--serif);
+      font-size: 1.5rem;
+      color: var(--cream);
+      margin-bottom: .5rem;
+    }
+
+    .footer-col a {
+      color: rgba(255, 255, 255, .7);
+      transition: color .2s;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .footer-col a:hover {
+      color: var(--cream);
+    }
+
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 3rem auto 0;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, .1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    /* ── STICKY BAR ── */
+    .sticky-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 99;
+      background: var(--warm-white);
+      border-top: 1px solid var(--border);
+      padding: .875rem 5vw;
+      box-shadow: 0 -4px 20px rgba(0, 0, 0, .1);
+      transform: translateY(100%);
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .sticky-bar.visible {
+      transform: translateY(0);
+    }
+
+    .sticky-bar-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      gap: .75rem;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .sticky-text {
+      font-size: .875rem;
+      color: var(--muted);
+    }
+
+    .sticky-text strong {
+      color: var(--charcoal);
+    }
+
+    .sticky-btns {
+      display: flex;
+      gap: .625rem;
+      flex-shrink: 0;
+    }
+
+    .sticky-btn-ghost {
+      background: transparent;
+      color: var(--charcoal);
+      border: 1px solid var(--border);
+      padding: .65rem 1.25rem;
+      border-radius: 999px;
+      font-size: .8125rem;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    .sticky-btn-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      background: var(--brand-blue);
+      color: var(--cream);
+      padding: .65rem 1.25rem;
+      border-radius: 999px;
+      font-size: .8125rem;
+      font-weight: 600;
+      white-space: nowrap;
+      border: 1px solid var(--brand-blue);
+    }
+
+    .sticky-btn-whatsapp:hover {
+      background: var(--brand-blue-hover);
+    }
+
+    /* ── MODALS ── */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(5px);
+      padding: 1rem;
+    }
+
+    .modal.open {
+      display: flex;
+    }
+
+    .modal-content {
+      background: var(--cream);
+      padding: 2.5rem;
+      border-radius: var(--radius-lg);
+      max-width: 550px;
+      width: 100%;
+      position: relative;
+      box-shadow: var(--shadow-lg);
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--muted);
+    }
+
+    .modal-title {
+      font-family: var(--sans);
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: var(--charcoal);
+    }
+
+    .modal-subtitle {
+      font-size: .9375rem;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: .875rem;
+      font-weight: 500;
+      margin-bottom: .5rem;
+      color: var(--charcoal);
+      text-align: left;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: .85rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      font-family: var(--sans);
+      font-size: .9375rem;
+      background: var(--warm-white);
+      color: var(--charcoal);
+    }
+
+    .form-group input:focus {
+      outline: 2px solid var(--brand-blue);
+    }
+
+    .payment-label {
+      display: block;
+      font-size: .875rem;
+      font-weight: 500;
+      margin-bottom: .5rem;
+      color: var(--charcoal);
+      text-align: left;
+    }
+
+    .payment-methods {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .pay-method {
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .pay-method:hover {
+      border-color: var(--muted);
+    }
+
+    .pay-method.active {
+      border-color: var(--brand-blue);
+      background: var(--brand-blue-light);
+      box-shadow: 0 0 0 1px var(--brand-blue);
+    }
+
+    .pay-method svg {
+      max-height: 20px;
+      max-width: 80%;
+    }
+
+    .pay-method-text {
+      font-weight: 800;
+      font-style: italic;
+      font-size: 1rem;
+      letter-spacing: -0.5px;
+    }
+
+    .modal-step {
+      display: none;
+    }
+
+    .modal-step.active {
+      display: block;
+    }
+
+    .summary-box {
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 1.25rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.9375rem;
+      color: var(--charcoal);
+    }
+
+    .summary-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.5rem;
+    }
+
+    .summary-row:last-child {
+      margin-bottom: 0;
+    }
+
+    .summary-label {
+      color: var(--muted);
+    }
+
+    .summary-val {
+      font-weight: 600;
+      text-align: right;
+    }
+
+    .btn-back {
+      background: transparent;
+      color: var(--muted);
+      border: none;
+      font-size: 0.9375rem;
+      font-weight: 500;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      margin-bottom: 1.5rem;
+      padding: 0;
+    }
+
+    .btn-back:hover {
+      color: var(--charcoal);
+    }
+
+    /* Success Toast styling */
+    .success-toast {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%) translateY(-100px);
+      background: var(--success-green);
+      color: white;
+      padding: 1.25rem 2rem;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-lg);
+      z-index: 10000;
+      font-family: var(--sans);
+      font-size: 1rem;
+      font-weight: 500;
+      transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      text-align: center;
+      width: 90%;
+      max-width: 400px;
+    }
+
+    .success-toast.show {
+      transform: translateX(-50%) translateY(0);
+    }
+
+    /* ════ RESPONSIVE ════ */
+    @media(max-width:1023px) {
+      .hero-inner {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+
+      .hero-subtext {
+        max-width: 100%;
+      }
+
+      .hero-image-wrap {
+        aspect-ratio: 3/4;
+        max-height: 500px;
+      }
+
+      .hero-badge {
+        left: 1rem;
+        right: auto;
+        bottom: 2.5rem;
+      }
+
+      .carousel-indicators {
+        bottom: 1rem;
+      }
+
+      .how-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .packages-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .pain-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .founder-inner {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+
+      .founder-image-wrap {
+        aspect-ratio: 3/2;
+        max-height: 380px;
+      }
+
+      .stats-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .testi-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media(max-width:767px) {
+      .nav-links {
+        display: none;
+      }
+
+      .nav-hamburger {
+        display: block;
+      }
+
+      .section {
+        padding: 3.5rem 1.25rem;
+      }
+
+      .modal-content {
+        padding: 1.5rem;
+      }
+
+      .hero {
+        padding: 2.5rem 1.25rem 3rem;
+      }
+
+      .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        align-items: start;
+      }
+
+      .hero-title {
+        font-size: 1.8rem;
+        margin: .5rem 0 .75rem;
+        line-height: 1.15;
+      }
+
+      .hero-subtext {
+        font-size: .9375rem;
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+        max-width: 100%;
+      }
+
+      .hero-image-col {
+        margin-top: 0;
+      }
+
+      .hero-image-wrap {
+        aspect-ratio: 4/5;
+        border-radius: var(--radius-md);
+        max-height: none;
+      }
+
+      .hero-badge {
+        left: 1rem;
+        right: auto;
+        bottom: 2rem;
+        min-width: 0;
+        padding: .75rem 1rem;
+        text-align: left;
+        border-radius: var(--radius-md);
+      }
+
+      .hero-badge-num {
+        font-size: 1.25rem;
+      }
+
+      .hero-badge-label {
+        font-size: .75rem;
+        line-height: 1.3;
+      }
+
+      .carousel-indicators {
+        bottom: 0.75rem;
+      }
+
+      .pill {
+        font-size: .75rem;
+        padding: .3rem .7rem;
+      }
+
+      .testi-filters {
+        gap: 0.5rem;
+      }
+
+      .filter-btn {
+        padding: .4rem 1rem;
+        font-size: .8125rem;
+      }
+
+      .how-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .packages-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .founder {
+        padding: 3.5rem 1.25rem;
+      }
+
+      .founder-inner {
+        gap: 2rem;
+      }
+
+      .founder-image-wrap {
+        aspect-ratio: 4/3;
+      }
+
+      .stats-strip {
+        padding: 2rem 1.25rem;
+      }
+
+      .stats-inner {
+        grid-template-columns: 1fr
+      }
+
+      .stat-item {
+        padding: 1.25rem;
+      }
+
+      .final-cta {
+        padding: 3.5rem 1.25rem;
+      }
+
+      .final-cta-btn-group {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .cta-pill-white,
+      .cta-pill-ghost {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+      }
+
+      .footer-inner {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      body {
+        padding-bottom: 80px;
+      }
+
+      .hero-ctas {
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: stretch;
+        width: 100%;
+      }
+
+      .btn-primary,
+      .btn-outline {
+        width: 100%;
+        justify-content: center;
+        padding: .85rem .5rem;
+        font-size: .9375rem;
+        white-space: normal;
+        text-align: center;
+      }
+
+      .sticky-bar {
+        padding: 0.75rem 1.25rem;
+        transform: translateY(0) !important;
+      }
+
+      .sticky-text {
+        display: none;
+      }
+
+      .sticky-btns {
+        width: 100%;
+        gap: 0.5rem;
+        justify-content: space-between;
+      }
+
+      .sticky-btn-ghost,
+      .sticky-btn-whatsapp {
+        flex: 1;
+        text-align: center;
+        justify-content: center;
+      }
+
+      .testi-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .testi-grid.stack-active {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+      }
+
+      .testi-grid.stack-active .testi-card {
+        position: sticky;
+        top: 85px;
+        box-shadow: 0 -15px 30px rgba(0, 0, 0, 0.08);
+        border-top: 1px solid rgba(0, 0, 0, 0.05);
+        max-height: calc(100vh - 190px);
+        overflow-y: auto;
+      }
+
+      .pain-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media(min-width:1200px) {
+      body {
+        padding-bottom: 72px;
+      }
+    }
+  </style>
+
+  <!-- Calendly Script -->
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+  <script>
+    // --- Global Data and Functions mapped to Window so HTML onclicks work perfectly ---
+
+    // 1. Dynamic Scarcity Bar
+    function updateScarcity() {
+      const today = new Date();
+      const dayOfMonth = today.getDate();
+      // Start at 5 spots, reduce by 1 every 6 days. Floor prevents it dropping to 0 too fast.
+      let spots = Math.max(1, 5 - Math.floor(dayOfMonth / 6));
+
+      document.querySelectorAll('.dynamic-spots').forEach(el => {
+        el.textContent = spots;
+      });
+    }
+
+    // 2. Legal Modals Data
+    window.legalData = {
+      privacy: {
+        title: "Privacy Policy",
+        text: `<strong>1. Introduction</strong><br>At JP Nyiha Coaching (Jape Fitness), your privacy is a priority. This policy outlines how we collect, use, and protect your personal data in compliance with the Data Protection Act (No. 24 of 2019) of Kenya.<br><br>
+    <strong>2. Data Collection</strong><br>We collect personal data you provide directly to us during enrolment and coaching, including but not limited to: your name, email, phone number, payment details, and physical health markers necessary for fitness programming.<br><br>
+    <strong>3. Use of Data</strong><br>Your data is strictly used to deliver customized coaching services, communicate your progress, and process transactions. Jape Fitness acts as the Data Controller.<br><br>
+    <strong>4. Data Sharing & Security</strong><br>We do not sell your personal data to third parties. We utilize industry-standard encryption to protect your data from unauthorized access, alteration, or disclosure.`
+      },
+      terms: {
+        title: "Terms & Conditions",
+        text: `<strong>1. Scope of Services</strong><br>Jape Fitness provides personalized online weight loss coaching, nutrition guidelines, and workout programs. All services are governed by the laws of Kenya.<br><br>
+    <strong>2. Client Responsibilities</strong><br>By enrolling, you acknowledge that Jape Fitness provides fitness coaching and not medical advice. You are responsible for consulting a physician prior to undertaking any new dietary or exercise regimen.<br><br>
+    <strong>3. Program Access</strong><br>Access to the Jape Fitness tracking application and proprietary materials is granted solely to the registered client. Sharing or reproducing these materials without written consent is strictly prohibited and may result in immediate termination without refund.<br><br>
+    <strong>4. Limitation of Liability</strong><br>JP Nyiha and Jape Fitness shall not be held liable for any direct, indirect, or consequential injuries or damages resulting from the execution of our programs.`
+      },
+      cookie: {
+        title: "Cookie Policy",
+        text: `<strong>What are cookies?</strong><br>Cookies are small text files placed on your device when you visit our website. They help us ensure the site functions properly and improve your user experience.<br><br>
+    <strong>How we use cookies</strong><br>We use essential cookies to manage your sessions and performance cookies to analyze site traffic. This allows us to see how users interact with the site and improve our content.<br><br>
+    <strong>Managing cookies</strong><br>You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, some parts of our site may not function optimally.`
+      },
+      refund: {
+        title: "Refund Policy",
+        text: `<strong>1. Our Commitment to Your Success</strong><br>We pour our heart and soul into every custom plan. Because of the highly personalized nature of this coaching, the intellectual property provided, and the immediate start of services upon enrolment, we cannot offer refunds once the program begins.<br><br>
+    <strong>2. Medical Emergencies</strong><br>Your health and success are our absolute priorities. If you encounter a severe, documented medical emergency that prevents you from continuing, we will gladly pause your coaching timeline without penalty until you are fully recovered and medically cleared to resume.`
+      }
+    };
+
+    window.openLegalModal = function (type, e) {
+      if (e) e.preventDefault();
+      const modal = document.getElementById('legalModal');
+      const modalTitle = document.getElementById('legalModalTitle');
+      const modalBody = document.getElementById('legalModalBody');
+      if (modalTitle && window.legalData[type]) modalTitle.textContent = window.legalData[type].title;
+      if (modalBody && window.legalData[type]) modalBody.innerHTML = '<p>' + window.legalData[type].text + '</p>';
+      if (modal) modal.classList.add('open');
+    };
+
+    // 3. Calendly Integration
+    window.openCalendarModal = function (e) {
+      if (e) e.preventDefault();
+      // Open the Calendly popup using the provided URL
+      Calendly.initPopupWidget({ url: 'https://calendly.com/bellatrixmilani/30min' });
+      return false;
+    };
+
+    function showSuccessToast(message) {
+      const toast = document.getElementById('successToast');
+      if (toast) {
+        toast.innerHTML = message;
+        toast.classList.add('show');
+        setTimeout(() => {
+          toast.classList.remove('show');
+        }, 6000);
+      }
+    }
+
+    // Listen for Calendly Booking Success
+    window.addEventListener('message', function (e) {
+      if (e.data.event && e.data.event === 'calendly.event_scheduled') {
+        if (typeof Calendly !== 'undefined' && Calendly.closePopupWidget) {
+          Calendly.closePopupWidget();
+        }
+        showSuccessToast("🎉 You have successfully booked the call!<br><span style='font-size:0.875rem;font-weight:400;'>Please check your email for the confirmed date and time details.</span>");
+      }
+    });
+
+    // 4. Custom Payment Flow Integration
+    let currentPaymentMethod = 'mpesa';
+    let currentPackagePrice = 250000;
+
+    window.selectPaymentMethod = function (method) {
+      currentPaymentMethod = method;
+      document.querySelectorAll('.pay-method').forEach(el => el.classList.remove('active'));
+      const activeEl = document.getElementById('pm-' + method);
+      if (activeEl) activeEl.classList.add('active');
+    };
+
+    window.goToStep = function (stepId) {
+      document.querySelectorAll('.modal-step').forEach(el => el.classList.remove('active'));
+      const nextEl = document.getElementById(stepId);
+      if (nextEl) nextEl.classList.add('active');
+    };
+
+    window.goToNextPaymentStep = function () {
+      const pkgNameEl = document.getElementById('modalPackageName');
+      const pkg = pkgNameEl ? pkgNameEl.textContent : 'Silver Package';
+      const phoneEl = document.getElementById('fwPhone');
+      const phone = phoneEl ? phoneEl.value : '';
+
+      const amtStr = currentPackagePrice.toLocaleString() + ' KES';
+
+      if (currentPaymentMethod === 'mpesa') {
+        document.getElementById('mpesaSumPkg').textContent = pkg;
+        document.getElementById('mpesaSumAmt').textContent = amtStr;
+        document.getElementById('mpesaSumPhone').textContent = phone;
+
+        const now = new Date();
+        document.getElementById('mpesaSumDate').textContent = now.toLocaleDateString();
+        document.getElementById('mpesaSumTime').textContent = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+        goToStep('stepMpesa');
+      } else if (currentPaymentMethod === 'visa' || currentPaymentMethod === 'mastercard') {
+        document.getElementById('cardSumAmt').textContent = amtStr;
+        goToStep('stepCard');
+      } else if (currentPaymentMethod === 'paypal') {
+        document.getElementById('paypalSumAmt').textContent = amtStr;
+        goToStep('stepPaypal');
+      }
+    };
+
+    window.simulateSuccess = function (methodName) {
+      const modal = document.getElementById('onboardingModal');
+      if (modal) modal.classList.remove('open');
+      showSuccessToast(`🎉 ${methodName} Payment Initiated!<br><span style='font-size:0.875rem;font-weight:400;'>We are securely processing your transaction. JP will contact you shortly.</span>`);
+    };
+
+    window.openModal = function (packageName, e) {
+      if (e) e.preventDefault();
+      const packageNameEl = document.getElementById('modalPackageName');
+      const onboardingForm = document.getElementById('onboardingForm');
+      const modalOnboard = document.getElementById('onboardingModal');
+
+      if (packageNameEl) packageNameEl.textContent = packageName + ' Package';
+      if (onboardingForm) onboardingForm.reset();
+
+      currentPackagePrice = 250000;
+      if (packageName.includes('Diamond')) currentPackagePrice = 500000;
+      if (packageName.includes('Platinum')) currentPackagePrice = 600000;
+
+      selectPaymentMethod('mpesa');
+      goToStep('step1');
+
+      if (modalOnboard) modalOnboard.classList.add('open');
+    };
+  </script>
+
+</head>
+
+<body>
+
+  <!-- Global Success Toast -->
+  <div id="successToast" class="success-toast"></div>
+
+  <!-- TOP MARQUEE (ENDLESS SCROLL) -->
+  <div class="top-marquee">
+    <div class="marquee-content">
+      <div class="marquee-item">
+        <span>Limited spots available. JP coaches personally — only <strong class="dynamic-spots">4</strong> new clients
+          remaining.</span>
+        <a href="#" onclick="openCalendarModal(event)">Secure your spot →</a>
+      </div>
+      <div class="marquee-item">
+        <span>Limited spots available. JP coaches personally — only <strong class="dynamic-spots">4</strong> new clients
+          remaining.</span>
+        <a href="#" onclick="openCalendarModal(event)">Secure your spot →</a>
+      </div>
+      <div class="marquee-item">
+        <span>Limited spots available. JP coaches personally — only <strong class="dynamic-spots">4</strong> new clients
+          remaining.</span>
+        <a href="#" onclick="openCalendarModal(event)">Secure your spot →</a>
+      </div>
+      <div class="marquee-item">
+        <span>Limited spots available. JP coaches personally — only <strong class="dynamic-spots">4</strong> new clients
+          remaining.</span>
+        <a href="#" onclick="openCalendarModal(event)">Secure your spot →</a>
+      </div>
+    </div>
+  </div>
+
+  <nav role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">JP Nyiha</a>
+      <div class="nav-links">
+        <a href="#testimonials">Reviews</a>
+        <a href="#founder">About JP</a>
+        <a href="#packages">Packages</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://wa.me/254712810443?text=Hi%20JP!%20I%20saw%20your%20website%20and%20I'm%20interested%20in%20your%20coaching%20programme.%20Can%20we%20Chat?"
+          target="_blank" class="btn-whatsapp-solid">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
+          </svg>
+          WhatsApp JP
+        </a>
+      </div>
+      <button class="nav-hamburger" id="menuBtn" aria-label="Open menu">☰</button>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#testimonials">Reviews</a>
+        <a href="#founder">About JP</a>
+        <a href="#packages">Packages</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://wa.me/254712810443?text=Hi%20JP!%20I%20saw%20your%20website%20and%20I'm%20interested%20in%20your%20coaching%20programme.%20Can%20we%20Chat?"
+          target="_blank" class="btn-full">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
+          </svg>
+          WhatsApp JP
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="pill"><span class="pill-dot"></span> Accepting new clients · Kenya</div>
+        <h1 class="hero-title">
+          Lose the weight.<br />
+          Keep it off. Forever.
+        </h1>
+        <p class="hero-subtext">
+          Listen, I know you've been sold quick fixes that don't last. My method is different. No starvation. No banned
+          foods. Just a science-backed system that 250+ Kenyan women have used to permanently transform their bodies —
+          while still eating what they love.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#" onclick="openCalendarModal(event)" class="btn-primary"
+            style="background:var(--brand-blue); border:1.5px solid var(--brand-blue);">
+            📞 Book My Free Call
+          </a>
+          <a href="#packages" class="btn-outline">
+            View Packages
+          </a>
+        </div>
+
+        <!-- Trust Badge / Avatars -->
+        <div class="hero-trust">
+          <div class="hero-avatars">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&q=80"
+              alt="Catherine">
+            <img src="https://images.unsplash.com/photo-1531123897727-8f129e1bfa82?auto=format&fit=crop&w=100&q=80"
+              alt="Njeri">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=100&q=80"
+              alt="Jennifer">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80"
+              alt="Natasha">
+            <div class="avatar-more">+246</div>
+          </div>
+          <div class="trust-text">
+            <div class="trust-stars">★★★★★</div>
+            <div class="trust-bold">135+ five-star reviews</div>
+          </div>
+        </div>
+
+      </div>
+      <div class="hero-image-col">
+        <div class="hero-image-wrap" id="heroCarousel">
+          <div class="carousel-slide active">
+            <div class="testi-img-inner">
+              <img src="https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?auto=format&fit=crop&w=600&q=80"
+                alt="Before" loading="eager" />
+              <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=600&q=80"
+                alt="After" loading="eager" />
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <div class="testi-img-inner">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80"
+                alt="Before" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&q=80"
+                alt="After" loading="lazy" />
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <div class="testi-img-inner">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=80"
+                alt="Before" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=600&q=80"
+                alt="After" loading="lazy" />
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <div class="testi-img-inner">
+              <img src="https://images.unsplash.com/photo-1531123897727-8f129e1bfa82?auto=format&fit=crop&w=600&q=80"
+                alt="Before" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=600&q=80"
+                alt="After" loading="lazy" />
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <div class="testi-img-inner">
+              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80"
+                alt="Before" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?auto=format&fit=crop&w=600&q=80"
+                alt="After" loading="lazy" />
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <div class="testi-img-inner">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80"
+                alt="Before" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=600&q=80"
+                alt="After" loading="lazy" />
+            </div>
+          </div>
+
+          <div class="carousel-indicators" id="carouselIndicators">
+            <!-- Dots injected by JS -->
+          </div>
+        </div>
+        <div class="hero-badge">
+          <div class="hero-badge-num" id="heroBadgeNum">−21.3 kgs</div>
+          <div class="hero-badge-label" id="heroBadgeLabel">Lost by Catherine in 5 months</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="stats-strip">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <div class="stat-num">250+</div>
+        <div class="stat-label">Women Transformed</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">135+</div>
+        <div class="stat-label">Five-Star Reviews</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">9+</div>
+        <div class="stat-label">Years of Experience</div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section pain">
+    <div class="section-inner">
+      <p class="section-label">Why you're struggling</p>
+      <h2 class="section-title">You've tried everything.<br />And nothing has stuck.</h2>
+      <div class="pain-grid">
+        <div class="pain-left">
+          <ul class="pain-list">
+            <li><span class="icon-x">✗</span> Keto worked for a month, then you gained it all back</li>
+            <li><span class="icon-x">✗</span> Intermittent fasting made you obsessive about food</li>
+            <li><span class="icon-x">✗</span> You're eating less and exercising more — and getting nowhere</li>
+            <li><span class="icon-x">✗</span> You blame age, hormones, or menopause — "that's just how it is"</li>
+            <li><span class="icon-x">✗</span> You lose weight, celebrate, then slowly creep back to where you started
+            </li>
+            <li><span class="icon-x">✗</span> Programmes that work while you're on them and fail the moment you stop
+            </li>
+          </ul>
+          <div class="pain-bridge">
+            "I know you've been burned before. Here's why this is different — it teaches you a skill you keep forever."
+            — JP
+          </div>
+        </div>
+
+        <div class="pain-right">
+          <div class="pain-solution">
+            <h3>"Moderation, not elimination."</h3>
+            <ul class="solution-items">
+              <li><span class="icon-check">✓</span> Eat the foods you love — chapatis, cake, wine, pasta — within a plan
+                that works</li>
+              <li><span class="icon-check">✓</span> Work out just 2–3 times a week from home or the gym</li>
+              <li><span class="icon-check">✓</span> Build habits you can sustain for the rest of your life — not just 12
+                weeks</li>
+              <li><span class="icon-check">✓</span> Get daily accountability from JP himself, including weekends</li>
+              <li><span class="icon-check">✓</span> Learn a lifetime maintenance system so the weight never comes back
+              </li>
+            </ul>
+            <a href="#" onclick="openCalendarModal(event)" class="btn-primary"
+              style="background:var(--soft-black); border-color:var(--soft-black); width:100%; margin-top:2rem;">Book My
+              Free Discovery Call →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="section testimonials">
+    <div class="section-inner">
+      <p class="section-label">In their own words</p>
+      <h2 class="section-title">What the women are saying</h2>
+
+      <div class="testi-filters">
+        <button class="filter-btn active" data-filter="all">All Reviews</button>
+        <button class="filter-btn" data-filter="loss-10">10+ kg Loss</button>
+        <button class="filter-btn" data-filter="post-menopause">Post-Menopause</button>
+        <button class="filter-btn" data-filter="post-baby">Post-Baby</button>
+        <button class="filter-btn" data-filter="confidence">Confidence</button>
+      </div>
+
+      <div class="testi-grid" id="testiGrid">
+        <!-- 1 -->
+        <div class="testi-card loss-10">
+          <div class="testi-img-wrap">
+            <div class="testi-img-inner">
+              <img src="https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?auto=format&fit=crop&w=400&q=80"
+                alt="Before" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=400&q=80"
+                alt="After" loading="lazy" />
+            </div>
+          </div>
+          <div class="testi-content">
+            <div class="testi-meta-header">
+              <div class="testi-name">Catherine</div>
+              <div class="testi-stars">★★★★★</div>
+            </div>
+            <div class="testi-result">−21.3 kgs · 81.6 → 60.3 kg</div>
+            <p class="testi-quote">I was skeptical about the program and didn't think it would work for me — especially
+              because I love cake so much. Now, I am 60.3 kgs! Because of the sustainable habits we built I have been
+              able to keep the weight off permanently. Oh, and I still eat cake and have been doing so for the past 2
+              years. I never believed I could do it. But if I can do it, so can anyone!</p>
+            <span class="testi-tag">Still maintaining 2 years later</span>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="testi-card post-menopause loss-10">
+          <div class="testi-img-wrap">
+            <div class="testi-img-inner">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80"
+                alt="Before" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=400&q=80"
+                alt="After" loading="lazy" />
+            </div>
+          </div>
+          <div class="testi-content">
+            <div class="testi-meta-header">
+              <div class="testi-name">Njeri</div>
+              <div class="testi-stars">★★★★★</div>
+            </div>
+            <div class="testi-result">−17.2 kgs</div>
+            <p class="testi-quote">I tried Keto, I.F, OMAD — I had done it all. But as I grew older, taking the weight
+              off became very difficult. I believed and accepted the myths: it's menopause, it's age. Nonsense! Learning
+              how to eat with JP was the most profound experience for me. Especially because I can still have my wine in
+              moderation. Every penny spent has been worth it.</p>
+            <span class="testi-tag">Post-menopause transformation</span>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="testi-card loss-10">
+          <div class="testi-img-wrap">
+            <div class="testi-img-inner">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80"
+                alt="Before" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=400&q=80"
+                alt="After" loading="lazy" />
+            </div>
+          </div>
+          <div class="testi-content">
+            <div class="testi-meta-header">
+              <div class="testi-name">Jennifer</div>
+              <div class="testi-stars">★★★★★</div>
+            </div>
+            <div class="testi-result">−18.2 kgs · 80.8 → 62.6 kg</div>
+            <p class="testi-quote">I have tried a couple of diet programs before, lost a lot of weight but once I was
+              done I gradually regained it. What I love about JP's program is that it's sustainable and gives me
+              control. I decide what and when to eat. No forbidden foods, no long hours in the gym, no food replacement
+              shakes. My only regret is that I didn't get on the program earlier.</p>
+            <span class="testi-tag">Ended the yo-yo cycle</span>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="testi-card confidence">
+          <div class="testi-img-wrap">
+            <div class="testi-img-inner">
+              <img src="https://images.unsplash.com/photo-1531123897727-8f129e1bfa82?auto=format&fit=crop&w=400&q=80"
+                alt="Before" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=400&q=80"
+                alt="After" loading="lazy" />
+            </div>
+          </div>
+          <div class="testi-content">
+            <div class="testi-meta-header">
+              <div class="testi-name">Natasha</div>
+              <div class="testi-stars">★★★★★</div>
+            </div>
+            <div class="testi-result">−7.1 kgs · Waist 47" → 36"</div>
+            <p class="testi-quote">Beyond the physical changes, you helped me rebuild my self-esteem. When I first met
+              you, I was the most broken version of myself. I avoided cameras because all I could see were flaws. Today,
+              I walk into rooms without shrinking. I am able to do the things I love again and feel confident in my own
+              skin. I can maintain this lifestyle without feeling like I am robbing myself of the good things in life.
+            </p>
+            <span class="testi-tag">Confidence completely rebuilt</span>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="testi-card loss-10">
+          <div class="testi-img-wrap">
+            <div class="testi-img-inner">
+              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80"
+                alt="Before" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?auto=format&fit=crop&w=400&q=80"
+                alt="After" loading="lazy" />
+            </div>
+          </div>
+          <div class="testi-content">
+            <div class="testi-meta-header">
+              <div class="testi-name">Linda</div>
+              <div class="testi-stars">★★★★★</div>
+            </div>
+            <div class="testi-result">−20 kgs in 9 months</div>
+            <p class="testi-quote">I can eat carbs daily, I don't have to fast, I can have my small packet of crisps in
+              moderation and I am not starving myself? I'd have never believed this was possible but JP's program has
+              shown me otherwise. I lost 20kgs in 9 months! Thank you so much for my transformation. I am indebted to
+              you!</p>
+            <span class="testi-tag">Carbs every day, 20 kgs down</span>
+          </div>
+        </div>
+        <!-- 6 -->
+        <div class="testi-card post-baby">
+          <div class="testi-img-wrap">
+            <div class="testi-img-inner">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80"
+                alt="Before" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=400&q=80"
+                alt="After" loading="lazy" />
+            </div>
+          </div>
+          <div class="testi-content">
+            <div class="testi-meta-header">
+              <div class="testi-name">Yvonne</div>
+              <div class="testi-stars">★★★★★</div>
+            </div>
+            <div class="testi-result">−6.4 kgs · 7 inches · 3 months</div>
+            <p class="testi-quote">These past three months have to be the easiest and fastest way I've ever lost weight.
+              I'm down to numbers even lower than before baby! JP made it easy and sustainable to build a routine I'm
+              sure I can stick to for the rest of my life. I feel good in my clothes again and my confidence is up. I
+              cannot recommend him enough!</p>
+            <span class="testi-tag">Post-baby body goal achieved</span>
+          </div>
+        </div>
+        <!-- 7 -->
+        <div class="testi-card confidence">
+          <div class="testi-img-wrap">
+            <div class="testi-img-inner">
+              <img src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?auto=format&fit=crop&w=400&q=80"
+                alt="Before" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=400&q=80"
+                alt="After" loading="lazy" />
+            </div>
+          </div>
+          <div class="testi-content">
+            <div class="testi-meta-header">
+              <div class="testi-name">Atuweni</div>
+              <div class="testi-stars">★★★★★</div>
+            </div>
+            <div class="testi-result">4 dress sizes · 18 → 12</div>
+            <p class="testi-quote">By the time I met JP, I had already tried several things with very little success.
+              Most programs start with "cut this, cut that, cut happiness." Two weeks into JP's program, I started
+              noticing changes. Today I feel healthier and stronger than I have ever felt in my life. My confidence has
+              skyrocketed — I now proudly wear tighter-fitting clothes. I've had to give away most of my old clothes — a
+              happy problem!</p>
+            <span class="testi-tag">4 dress sizes in one programme</span>
+          </div>
+        </div>
+        <!-- 8 -->
+        <div class="testi-card confidence loss-10">
+          <div class="testi-img-wrap">
+            <div class="testi-img-inner">
+              <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=400&q=80"
+                alt="Before" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1524504388266-d14ea0a514d3?auto=format&fit=crop&w=400&q=80"
+                alt="After" loading="lazy" />
+            </div>
+          </div>
+          <div class="testi-content">
+            <div class="testi-meta-header">
+              <div class="testi-name">Dorcas</div>
+              <div class="testi-stars">★★★★★</div>
+            </div>
+            <div class="testi-result">−9.4 kgs · 7 inches off waist</div>
+            <p class="testi-quote">I never imagined I could lose weight while eating chapatis, sausage, bacon, and ice
+              creams — but with this programme I enjoyed all these and more. It's about moderation and not prohibition.
+              JP's professionalism is on another level. Top notch. I would confidently recommend him to anyone!</p>
+            <span class="testi-tag">Chapatis, bacon, ice cream included</span>
+          </div>
+        </div>
+        <!-- 9 -->
+        <div class="testi-card post-baby loss-10">
+          <div class="testi-img-wrap">
+            <div class="testi-img-inner">
+              <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80"
+                alt="Before" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=400&q=80"
+                alt="After" loading="lazy" />
+            </div>
+          </div>
+          <div class="testi-content">
+            <div class="testi-meta-header">
+              <div class="testi-name">Sarah</div>
+              <div class="testi-stars">★★★★★</div>
+            </div>
+            <div class="testi-result">−12.5 kgs · 5 months</div>
+            <p class="testi-quote">Losing the baby weight seemed impossible while juggling a newborn and work. I was
+              exhausted. JP built a plan that required minimal prep and quick 30-minute home workouts. I didn't feel
+              starved, and my energy actually increased. I'm now back to my pre-pregnancy weight and feeling stronger
+              than ever.</p>
+            <span class="testi-tag">Energy up, 12.5 kgs down</span>
+          </div>
+        </div>
+        <!-- 10 -->
+        <div class="testi-card post-menopause loss-10">
+          <div class="testi-img-wrap">
+            <div class="testi-img-inner">
+              <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=400&q=80"
+                alt="Before" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1562771242-a02d9096c85c?auto=format&fit=crop&w=400&q=80"
+                alt="After" loading="lazy" />
+            </div>
+          </div>
+          <div class="testi-content">
+            <div class="testi-meta-header">
+              <div class="testi-name">Mary</div>
+              <div class="testi-stars">★★★★★</div>
+            </div>
+            <div class="testi-result">−14.1 kgs</div>
+            <p class="testi-quote">I had resigned myself to the "middle-age spread." Every doctor told me my metabolism
+              had just slowed down. JP proved them wrong. By adjusting my macros without removing my favorite weekend
+              treats, the weight started dropping steadily. The best part is the joint pain I had is completely gone.
+            </p>
+            <span class="testi-tag">Metabolism successfully rebooted</span>
+          </div>
+        </div>
+        <!-- 11 -->
+        <div class="testi-card loss-10 confidence">
+          <div class="testi-img-wrap">
+            <div class="testi-img-inner">
+              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80"
+                alt="Before" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=400&q=80"
+                alt="After" loading="lazy" />
+            </div>
+          </div>
+          <div class="testi-content">
+            <div class="testi-meta-header">
+              <div class="testi-name">Joy</div>
+              <div class="testi-stars">★★★★★</div>
+            </div>
+            <div class="testi-result">−15.8 kgs · 6 months</div>
+            <p class="testi-quote">Before this, I would lose 5kg on an extreme diet and immediately gain 7kg back when I
+              stopped. It was exhausting mentally and physically. JP taught me food freedom. I don't dread eating
+              anymore. I've lost over 15kg, but the peace of mind and confidence I've gained is the real victory here.
+            </p>
+            <span class="testi-tag">Food freedom unlocked</span>
+          </div>
+        </div>
+        <!-- 12 -->
+        <div class="testi-card confidence">
+          <div class="testi-img-wrap">
+            <div class="testi-img-inner">
+              <img src="https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?auto=format&fit=crop&w=400&q=80"
+                alt="Before" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1488228469209-c14ef233048a?auto=format&fit=crop&w=400&q=80"
+                alt="After" loading="lazy" />
+            </div>
+          </div>
+          <div class="testi-content">
+            <div class="testi-meta-header">
+              <div class="testi-name">Faith</div>
+              <div class="testi-stars">★★★★★</div>
+            </div>
+            <div class="testi-result">−8.2 kgs · 3 dress sizes</div>
+            <p class="testi-quote">I bought this program for the physical transformation, but the mental shift was the
+              biggest return on investment. I'm no longer hiding behind oversized clothes. I'm taking photos, attending
+              social events, and truly enjoying life again. The constant accountability from JP was exactly what I was
+              missing all those years.</p>
+            <span class="testi-tag">No more hiding</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="load-more-wrapper">
+        <button class="btn-outline" id="loadMoreBtn">Load More Reviews ↓</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="founder" class="founder">
+    <div class="founder-inner">
+      <div class="founder-image-wrap">
+        <img src="https://jpnyiha.com/wp-content/uploads/2024/04/Coach.png" alt="JP Nyiha — Head Coach and Founder"
+          loading="lazy" />
+      </div>
+      <div>
+        <p class="founder-label">Meet your coach</p>
+        <h2 class="founder-name">JP Nyiha</h2>
+        <p class="founder-subtitle">Head Coach & Founder · Jape Fitness</p>
+        <div class="founder-bio">
+          <p>I started off just like all of you — <strong>dissatisfied with how I looked and felt.</strong> I knew deep
+            inside that I was not living up to my potential. I was settling.</p>
+          <p>Results came slowly, but I persevered. I remained consistent even when it felt like I could barely see
+            results. <strong>One year later, I was a changed man</strong> — not because I have amazing genetics. I pride
+            myself on being just like all of you. My only difference was a burning desire to change.</p>
+          <p>Everything I experienced, I built into a system. That system has now helped <strong>over 250 women</strong>
+            transform their bodies permanently — without starvation, without giving up the foods they love, without
+            spending their lives in the gym.</p>
+          <p><strong>My system was made for the woman who doesn't want to starve, but to prosper. Who doesn't want to
+              survive, but to thrive.</strong> I have made this for you. Your time is now.</p>
+        </div>
+        <div class="founder-creds">
+          <span class="cred-pill">9+ Years Coaching</span>
+          <span class="cred-pill">The Metabolic Freedom Method™</span>
+          <span class="cred-pill">250+ Women Transformed</span>
+          <span class="cred-pill">Daily Accountability</span>
+          <span class="cred-pill">Nairobi, Kenya</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section how">
+    <div class="section-inner">
+      <p class="section-label">The Method</p>
+      <h2 class="section-title">How it works</h2>
+      <div class="how-grid">
+        <div class="how-card">
+          <div class="how-num">01</div>
+          <div class="how-title">Personalised nutrition plan</div>
+          <div class="how-desc">No banned foods. You learn to eat the foods you love within a macro framework that
+            creates a sustainable calorie deficit without hunger.</div>
+        </div>
+        <div class="how-card">
+          <div class="how-num">02</div>
+          <div class="how-title">Smart workouts, 2–3x/week</div>
+          <div class="how-desc">Home or gym — your choice. Short, effective sessions using progressive overload. We get
+            maximum results doing the minimum effective dose.</div>
+        </div>
+        <div class="how-card">
+          <div class="how-num">03</div>
+          <div class="how-title">Daily accountability with JP</div>
+          <div class="how-desc">JP checks in with you every single day — including weekends. Weekly video calls keep the
+            plan aligned with your progress and your life.</div>
+        </div>
+        <div class="how-card">
+          <div class="how-num">04</div>
+          <div class="how-title">Lifetime maintenance</div>
+          <div class="how-desc">When you hit your goal, you get the exact blueprint to maintain it effortlessly. This is
+            why our results stick — and other programmes don't.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="packages" class="section packages">
+    <div class="section-inner">
+      <p class="section-label">Coaching Packages</p>
+      <h2 class="section-title">Your investment in<br />permanent change</h2>
+      <p class="section-subtitle">This is not a quick fix. Every package is built around sustainability so the results
+        last for life.</p>
+
+      <div class="packages-grid">
+        <!-- SILVER -->
+        <div class="pkg-card">
+          <div class="pkg-name">Silver</div>
+          <div class="pkg-goal">Lose 3–4 kgs effortlessly</div>
+          <div class="pkg-price">
+            <div class="pkg-price-main">250,000 KSh</div>
+            <div class="pkg-price-period">per month</div>
+          </div>
+          <hr class="pkg-divider" />
+          <ul class="pkg-features">
+            <li><span class="feat-check">✓</span> Personalised nutrition plan (no restriction)</li>
+            <li><span class="feat-check">✓</span> Custom home or gym workout programme</li>
+            <li><span class="feat-check">✓</span> Daily check-ins 7 days a week</li>
+            <li><span class="feat-check">✓</span> Weekly video coaching calls</li>
+            <li><span class="feat-check">✓</span> All-in-one tracking app</li>
+          </ul>
+          <a href="#" onclick="openModal('Silver', event)" class="pkg-cta pkg-cta-dark">Join Silver →</a>
+        </div>
+
+        <!-- DIAMOND -->
+        <div class="pkg-card featured">
+          <div class="pkg-badge">Most Popular</div>
+          <div class="pkg-name light">Diamond 💎</div>
+          <div class="pkg-goal light">Lose 14–16 kgs & keep it off for life</div>
+          <div class="pkg-price">
+            <div class="pkg-price-main light">500,000 KSh</div>
+            <div class="pkg-price-period light">for 5 months</div>
+          </div>
+
+          <div class="pkg-highlight-dark">
+            Save 750,000 KSh vs monthly Silver · School fees worth of savings!
+          </div>
+
+          <ul class="pkg-features">
+            <li class="light"><span class="feat-check gold">✓</span> Everything in Silver</li>
+            <li class="light"><span class="feat-check gold">✓</span> Lifetime maintenance guide — keep the weight off
+              forever</li>
+            <li class="light"><span class="feat-check gold">✓</span> Eating-out guide — eat out without sabotaging
+              progress</li>
+            <li class="light"><span class="feat-check gold">✓</span> Priority WhatsApp access to JP</li>
+          </ul>
+          <a href="#" onclick="openModal('Diamond', event)" class="pkg-cta pkg-cta-light"
+            style="margin-top:2.5rem;">Join Diamond →</a>
+          <p class="pkg-note">Most women choose this plan</p>
+        </div>
+
+        <!-- PLATINUM -->
+        <div class="pkg-card" style="border: 1px solid var(--border);">
+          <div class="pkg-name">Platinum</div>
+          <div class="pkg-goal">Lose 30–33 kgs · Lifetime accountability partner</div>
+          <div class="pkg-price">
+            <div class="pkg-price-main">600,000 KSh</div>
+            <div class="pkg-price-period">for 12 months</div>
+          </div>
+
+          <div class="pkg-highlight-light">
+            Save up to 2.4 million KSh vs monthly Silver
+          </div>
+
+          <ul class="pkg-features">
+            <li><span class="feat-check">✓</span> Everything in Diamond</li>
+            <li><span class="feat-check">✓</span> 2 months free workouts after programme ends</li>
+            <li><span class="feat-check">✓</span> 2 months of weekly video calls post-programme</li>
+            <li><span class="feat-check">✓</span> 1 monthly 15-min consultation — <strong>for life</strong></li>
+          </ul>
+          <a href="#" onclick="openModal('Platinum', event)" class="pkg-cta pkg-cta-dark"
+            style="margin-top:2.5rem;">Join Platinum →</a>
+          <p class="pkg-note-dark">Best for: the full transformation</p>
+        </div>
+      </div>
+
+      <!-- Post Packages CTA -->
+      <div class="post-packages-cta">
+        Not sure which is right for you? <a href="#" onclick="openCalendarModal(event)">Book a free call with JP →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="faq" class="section faq">
+    <div class="section-inner">
+      <p class="section-label">Common questions</p>
+      <h2 class="section-title" style="text-align:center;">You're probably wondering...</h2>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            I've failed at diets before. Why will this be different? <span class="faq-chevron">▾</span>
+          </button>
+          <div class="faq-a">Because this isn't a diet — it's a skill. Every client who walks through JP's door has
+            failed at diets before. That's not a personal failure; it's proof those diets were fundamentally
+            unsustainable. JP's method teaches you how to eat, not what to eat, and that distinction is what makes the
+            results permanent. Jedidah had "tried everything" including intense programmes before JP. Ten kilograms in
+            five months — something she had never achieved before.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Do I have to give up the foods I love? <span class="faq-chevron">▾</span>
+          </button>
+          <div class="faq-a">No. The motto is moderation, not elimination. Clients eat chapatis, cake, pasta, wine, ice
+            cream, fries — and still lose weight consistently. You learn how to fit the foods you love into a plan that
+            works for your body.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            What if I'm too busy? I have no time for the gym. <span class="faq-chevron">▾</span>
+          </button>
+          <div class="faq-a">The programme requires just 2–3 short workouts per week, and can be done entirely from
+            home. Sessions are designed for working professionals and busy mothers. If you have 30 minutes 3 times a
+            week, you have enough time.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Can this work if I'm in menopause or have had children? <span class="faq-chevron">▾</span>
+          </button>
+          <div class="faq-a">Yes. JP has transformed women at every life stage — post-baby, perimenopausal, menopausal,
+            and beyond. Hormones and life stage are factored into every personalised plan. Njeri lost 17 kgs
+            post-menopause. Rosa lost 9.6 kgs while breastfeeding.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            What happens when the coaching period ends? Will I regain the weight? <span class="faq-chevron">▾</span>
+          </button>
+          <div class="faq-a">Diamond and Platinum clients receive a lifetime maintenance guide that shows you exactly
+            how to keep the weight off forever. Platinum members also receive monthly check-ins for life. The system is
+            built so you never need to return to a programme — you have the tools permanently.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            How do I pay, and are slots really limited? <span class="faq-chevron">▾</span>
+          </button>
+          <div class="faq-a">Payment is via M-Pesa, Visa, or Mastercard after enrolment. JP coaches personally — not
+            through a team — so the number of active clients at any one time is genuinely limited. If you're interested,
+            secure your spot by messaging JP on WhatsApp or joining a package directly above.</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div class="final-cta-inner">
+      <h2>Your time is now.<br />Let JP take care of the rest.</h2>
+      <p>Cheers in advance to your inevitable success. 250+ women have done it. They didn't think they could either.</p>
+
+      <div class="final-cta-btn-group">
+        <a href="https://instagram.com/japesfitness" target="_blank" class="cta-pill-white">
+          <svg style="width:20px; height:20px; fill:currentColor;" viewBox="0 0 24 24">
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+          </svg>
+          @japesfitness
+        </a>
+        <a href="mailto:johnnyiha1@gmail.com" class="cta-pill-ghost">
+          <svg
+            style="width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:2; stroke-linecap:round; stroke-linejoin:round;"
+            viewBox="0 0 24 24">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <path d="M22 6l-10 7L2 6" />
+          </svg>
+          johnnyiha1@gmail.com
+        </a>
+        <a href="https://wa.me/254712810443?text=Hi%20JP!%20I%20saw%20your%20website%20and%20I'm%20interested%20in%20your%20coaching%20programme.%20Can%20we%20Chat?"
+          target="_blank" class="cta-pill-ghost">
+          <svg style="width:20px; height:20px; fill:currentColor;" viewBox="0 0 24 24">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
+          </svg>
+          WhatsApp JP
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-col" style="max-width:300px;">
+        <div class="footer-logo">JP Nyiha</div>
+        <p style="color:rgba(255,255,255,.5); line-height:1.6; margin-bottom:1rem;">Permanent weight loss coaching for
+          women.<br />Eat what you love, drop the weight, and keep it off for life.</p>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Connect</h4>
+        <a href="mailto:johnnyiha1@gmail.com">johnnyiha1@gmail.com</a>
+        <a href="https://instagram.com/japesfitness" target="_blank">Instagram (@japesfitness)</a>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Legal</h4>
+        <a href="#" onclick="openLegalModal('privacy', event)">Privacy Policy</a>
+        <a href="#" onclick="openLegalModal('terms', event)">Terms & Conditions</a>
+        <a href="#" onclick="openLegalModal('cookie', event)">Cookie Policy</a>
+        <a href="#" onclick="openLegalModal('refund', event)">Refund Policy</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 John Paul Fitness. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <div class="sticky-bar" id="stickyBar">
+    <div class="sticky-bar-inner">
+      <div class="sticky-text"><strong>JP Nyiha Coaching</strong> · Limited slots available</div>
+      <div class="sticky-btns">
+        <a href="#packages" class="sticky-btn-ghost">Packages</a>
+        <a href="#" onclick="openCalendarModal(event)" class="btn-primary"
+          style="padding:.65rem 1.25rem; font-size:.8125rem;">Book Free Call →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- LEGAL MODAL -->
+  <div id="legalModal" class="modal">
+      <div class="modal-content" style="max-width: 600px;">
+          <button class="modal-close"
+        onclick="document.getElementById('legalModal').classList.remove('open')">&times;</button>
+          <h3 class="modal-title" id="legalModalTitle">Legal Document</h3>
+          <div
+        style="color:var(--charcoal); font-size:0.9375rem; line-height:1.7; margin-top:1rem; max-height:60vh; overflow-y:auto; padding-right:0.5rem;"
+        id="legalModalBody">
+              <!-- Content injected by JS -->
+            </div>
+        </div>
+  </div>
+
+  <!-- ENROLMENT MODAL (CUSTOM PAYMENT FLOW) -->
+  <div id="onboardingModal" class="modal">
+    <div class="modal-content" style="max-width:550px;">
+      <button class="modal-close"
+        onclick="document.getElementById('onboardingModal').classList.remove('open')">&times;</button>
+
+      <!-- STEP 1: Details & Method Selection -->
+      <div id="step1" class="modal-step active">
+        <h3 class="modal-title">Enrolment Application</h3>
+        <p class="modal-subtitle">Join the <strong id="modalPackageName">Package</strong>.</p>
+
+        <form id="onboardingForm" onsubmit="event.preventDefault(); goToNextPaymentStep();">
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+            <div class="form-group">
+              <label>First Name</label>
+              <input type="text" id="fwFirstName" required>
+            </div>
+            <div class="form-group">
+              <label>Last Name</label>
+              <input type="text" id="fwLastName" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" id="fwEmail" required>
+          </div>
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" id="fwPhone" required placeholder="+254 7XX XXX XXX">
+          </div>
+
+          <div class="payment-label">Select Payment Method</div>
+          <div class="payment-methods">
+            <div class="pay-method active" onclick="selectPaymentMethod('mpesa')" id="pm-mpesa">
+              <div class="pay-method-text" style="color:#4CAF50;">M-PESA</div>
+            </div>
+            <div class="pay-method" onclick="selectPaymentMethod('visa')" id="pm-visa">
+              <div class="pay-method-text"
+                style="color:#1A1F71; font-family:Arial, sans-serif; font-weight:900; font-style:italic; font-size:1.25rem; letter-spacing:-1px;">
+                VISA</div>
+            </div>
+            <div class="pay-method" onclick="selectPaymentMethod('mastercard')" id="pm-mastercard">
+              <svg viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="10" cy="10" r="10" fill="#EB001B" />
+                <circle cx="22" cy="10" r="10" fill="#F79E1B" />
+                <path
+                  d="M16 18.066A9.957 9.957 0 0112 10c0-3.086 1.395-5.85 3.59-7.662A9.957 9.957 0 0012 10c0 3.086 1.395 5.85 3.59 7.662A9.957 9.957 0 0116 18.066z"
+                  fill="#FF5F00" />
+              </svg>
+            </div>
+            <div class="pay-method" onclick="selectPaymentMethod('paypal')" id="pm-paypal">
+              <div class="pay-method-text" style="color:#003087; font-weight:700;"><i>PayPal</i></div>
+            </div>
+          </div>
+
+          <label
+            style="display:flex; align-items:flex-start; gap:0.5rem; font-size:0.8125rem; color:var(--muted); margin-top:1.5rem; cursor:pointer;">
+            <input type="checkbox" required style="width:auto; margin-top:0.2rem; accent-color:var(--brand-blue);">
+            <span>I agree to the <a href="#" onclick="openLegalModal('terms', event)"
+                style="color:var(--brand-blue); text-decoration:underline;">Terms & Conditions</a> and <a href="#"
+                onclick="openLegalModal('refund', event)"
+                style="color:var(--brand-blue); text-decoration:underline;">Refund Policy</a>.</span>
+          </label>
+
+          <button type="submit" class="btn-primary"
+            style="width:100%; justify-content:center; margin-top:1.5rem; font-size:1rem; padding:1rem;">Proceed to
+            Payment</button>
+        </form>
+      </div>
+
+      <!-- STEP 2: M-PESA -->
+      <div id="stepMpesa" class="modal-step">
+        <button class="btn-back" onclick="goToStep('step1')">← Back</button>
+        <h3 class="modal-title">Complete M-Pesa Payment</h3>
+        <p class="modal-subtitle">Review details to receive an STK prompt on your phone.</p>
+        <div class="summary-box">
+          <div class="summary-row"><span class="summary-label">Package</span><span class="summary-val"
+              id="mpesaSumPkg"></span></div>
+          <div class="summary-row"><span class="summary-label">Amount</span><span class="summary-val"
+              id="mpesaSumAmt"></span></div>
+          <div class="summary-row"><span class="summary-label">Phone</span><span class="summary-val"
+              id="mpesaSumPhone"></span></div>
+          <div class="summary-row" style="margin-top:0.75rem; padding-top:0.75rem; border-top:1px solid var(--border);">
+            <span class="summary-label">Date</span><span class="summary-val" id="mpesaSumDate"></span>
+          </div>
+          <div class="summary-row"><span class="summary-label">Time</span><span class="summary-val"
+              id="mpesaSumTime"></span></div>
+        </div>
+        <button type="button" class="btn-primary"
+          style="width:100%; justify-content:center; padding:1rem; font-size:1rem; background: #4CAF50; border-color: #4CAF50;"
+          onclick="simulateSuccess('M-Pesa')">Send M-Pesa Prompt</button>
+      </div>
+
+      <!-- STEP 2: CARD -->
+      <div id="stepCard" class="modal-step">
+        <button class="btn-back" onclick="goToStep('step1')">← Back</button>
+        <h3 class="modal-title">Pay by Card</h3>
+        <p class="modal-subtitle">Amount due: <strong id="cardSumAmt"></strong></p>
+        <form onsubmit="event.preventDefault(); simulateSuccess('Card');">
+          <div class="form-group">
+            <label>Card Number</label>
+            <input type="text" placeholder="0000 0000 0000 0000" maxlength="19" required>
+          </div>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+            <div class="form-group">
+              <label>Expiry Date</label>
+              <input type="text" placeholder="MM/YY" maxlength="5" required>
+            </div>
+            <div class="form-group">
+              <label>CVC</label>
+              <input type="text" placeholder="123" maxlength="4" required>
+            </div>
+          </div>
+          <button type="submit" class="btn-primary"
+            style="width:100%; justify-content:center; margin-top:1rem; padding:1rem; font-size:1rem;">Complete
+            Payment</button>
+        </form>
+      </div>
+
+      <!-- STEP 2: PAYPAL -->
+      <div id="stepPaypal" class="modal-step">
+        <button class="btn-back" onclick="goToStep('step1')">← Back</button>
+        <h3 class="modal-title">Checkout with PayPal</h3>
+        <p class="modal-subtitle">Amount due: <strong id="paypalSumAmt"></strong></p>
+        <div style="text-align:center; padding: 2rem 0;">
+          <p style="color:var(--muted); font-size:0.9375rem; margin-bottom: 2rem;">You will be securely redirected to
+            PayPal to complete your purchase.</p>
+          <button type="button" class="btn-primary"
+            style="width:100%; justify-content:center; padding:1rem; font-size:1rem; background:#003087; border-color:#003087;"
+            onclick="simulateSuccess('PayPal')">Proceed to PayPal</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Dynamic Scarcity Bar Execution
+      updateScarcity();
+
+      // Mobile Menu Navigation
+      const menuBtn = document.getElementById('menuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => {
+          const open = mobileMenu.classList.toggle('open');
+          menuBtn.textContent = open ? '✕' : '☰';
+        });
+
+        mobileMenu.querySelectorAll('a').forEach(a => {
+          a.addEventListener('click', () => {
+            mobileMenu.classList.remove('open');
+            menuBtn.textContent = '☰';
+          });
+        });
+      }
+
+      // FAQ Accordions
+      document.querySelectorAll('.faq-q').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const item = btn.parentElement;
+          const wasOpen = item.classList.contains('open');
+          document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+          if (!wasOpen) { item.classList.add('open'); }
+          btn.setAttribute('aria-expanded', !wasOpen);
+        });
+      });
+
+      // Sticky Bar Logic
+      let lastScroll = 0;
+      const stickyBar = document.getElementById('stickyBar');
+      if (stickyBar) {
+        window.addEventListener('scroll', () => {
+          const y = window.scrollY;
+          if (window.innerWidth >= 768) {
+            if (y > 400) { stickyBar.classList.add('visible'); }
+            else { stickyBar.classList.remove('visible'); }
+          }
+          lastScroll = y;
+        }, { passive: true });
+      }
+
+      // Hero Carousel Logic with Dot Timeline & Synced Badge (Paused on hover, slower interval)
+      const carouselWrap = document.getElementById('heroCarousel');
+      const slides = carouselWrap ? carouselWrap.querySelectorAll('.carousel-slide') : [];
+      const badgeNum = document.getElementById('heroBadgeNum');
+      const badgeLabel = document.getElementById('heroBadgeLabel');
+      const indicatorsContainer = document.getElementById('carouselIndicators');
+
+      const badgeData = [
+        { num: "−21.3 kgs", label: "Lost by Catherine in 5 months" },
+        { num: "−18.2 kgs", label: "Lost by Jennifer" },
+        { num: "−13.2 kgs", label: "Lost by Lydia in 4 months" },
+        { num: "−6.0 kgs", label: "Lost by Violet in 3 months" },
+        { num: "−10 inches", label: "Lost by Cathy in 4 months" },
+        { num: "−15.1 kgs", label: "Lost by Wangui" }
+      ];
+
+      let currentSlide = 0;
+      let carouselIntervalId;
+
+      function nextSlide() {
+        if (slides.length === 0) return;
+
+        slides[currentSlide].classList.remove('active');
+        const dots = document.querySelectorAll('.carousel-dot');
+        if (dots.length > currentSlide) dots[currentSlide].classList.remove('active');
+
+        currentSlide = (currentSlide + 1) % slides.length;
+
+        slides[currentSlide].classList.add('active');
+        if (dots.length > currentSlide) dots[currentSlide].classList.add('active');
+
+        if (badgeNum && badgeLabel) {
+          badgeNum.style.opacity = 0;
+          badgeLabel.style.opacity = 0;
+
+          setTimeout(() => {
+            const safeIndex = currentSlide % badgeData.length;
+            badgeNum.textContent = badgeData[safeIndex].num;
+            badgeLabel.textContent = badgeData[safeIndex].label;
+            badgeNum.style.opacity = 1;
+            badgeLabel.style.opacity = 1;
+          }, 400);
+        }
+      }
+
+      function startCarousel() {
+        carouselIntervalId = setInterval(nextSlide, 5500);
+      }
+
+      if (slides.length > 0 && indicatorsContainer) {
+        slides.forEach((_, i) => {
+          const dot = document.createElement('div');
+          dot.className = `carousel-dot ${i === 0 ? 'active' : ''}`;
+          indicatorsContainer.appendChild(dot);
+        });
+
+        startCarousel();
+
+        // Pause on Hover
+        if (carouselWrap) {
+          carouselWrap.addEventListener('mouseenter', () => clearInterval(carouselIntervalId));
+          carouselWrap.addEventListener('mouseleave', startCarousel);
+          carouselWrap.addEventListener('touchstart', () => clearInterval(carouselIntervalId), { passive: true });
+          carouselWrap.addEventListener('touchend', startCarousel, { passive: true });
+        }
+      }
+
+      // Testimonials Filter & Load More Logic
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const reviews = document.querySelectorAll('.testi-card');
+      const loadMoreBtn = document.getElementById('loadMoreBtn');
+      let currentFilter = 'all';
+      let itemsVisibleInitially = 4;
+      let showingAll = false;
+
+      function updateReviews() {
+        let visibleCount = 0;
+        let totalMatching = 0;
+        const testiGrid = document.getElementById('testiGrid');
+
+        reviews.forEach(review => {
+          const matches = currentFilter === 'all' || review.classList.contains(currentFilter);
+          if (matches) totalMatching++;
+
+          if (matches && (showingAll || visibleCount < itemsVisibleInitially)) {
+            review.style.display = 'flex';
+            visibleCount++;
+          } else {
+            review.style.display = 'none';
+          }
+        });
+
+        if (loadMoreBtn) {
+          if (!showingAll && totalMatching > itemsVisibleInitially) {
+            loadMoreBtn.style.display = 'inline-flex';
+          } else {
+            loadMoreBtn.style.display = 'none';
+          }
+        }
+
+        if (testiGrid) {
+          if (showingAll) {
+            testiGrid.classList.add('stack-active');
+          } else {
+            testiGrid.classList.remove('stack-active');
+          }
+        }
+      }
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          currentFilter = btn.getAttribute('data-filter');
+          if (currentFilter !== 'all') {
+            showingAll = true;
+          } else {
+            showingAll = false;
+          }
+          updateReviews();
+        });
+      });
+
+      if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', () => {
+          showingAll = true;
+          updateReviews();
+        });
+      }
+
+      updateReviews();
+
+      // Close modals on clicking outside
+      window.addEventListener('click', (e) => {
+        const legalModal = document.getElementById('legalModal');
+        const onboardingModal = document.getElementById('onboardingModal');
+
+        if (legalModal && e.target === legalModal) {
+          legalModal.classList.remove('open');
+        }
+        if (onboardingModal && e.target === onboardingModal) {
+          onboardingModal.classList.remove('open');
+        }
+      });
+
+    });
+
+  </script>
+
+</body>
+
+</html>
